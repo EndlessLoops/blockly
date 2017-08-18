@@ -62,3 +62,31 @@ Blockly.Blocks['move_backward'] = {
     this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
   }
 };
+
+Blockly.Blocks['turn_left'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Turn_Left ")
+        .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
+        .appendField("Speed");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);    
+    this.setColour(65);
+    this.setTooltip('');
+    this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
+  }
+};
+
+Blockly.Blocks['turn_right'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Turn_Right ")
+        .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
+        .appendField("Speed");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);    
+    this.setColour(65);
+    this.setTooltip('');
+    this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
+  }
+};

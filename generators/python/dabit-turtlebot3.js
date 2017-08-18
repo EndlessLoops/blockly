@@ -46,3 +46,25 @@ Blockly.Python['move_backward'] = function(block) {
   return code;
 
 };
+
+Blockly.Python['turn_left'] = function(block) {
+
+  var dropdown_speed = block.getFieldValue('speed');
+
+  var code = "";
+  code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
+  code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/turn_left.py");
+  return code;
+
+};
+
+Blockly.Python['turn_right'] = function(block) {
+
+  var dropdown_speed = block.getFieldValue('speed');
+
+  var code = "";
+  code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
+  code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/turn_right.py");
+  return code;
+
+};
