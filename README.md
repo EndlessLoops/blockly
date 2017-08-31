@@ -7,12 +7,6 @@ blocks together to build programs.  All code is free and open source.
 
 ![](https://developers.google.com/blockly/sample.png)
 
-**The following blocks have been developed by @erlerobotics**
+This will be permanently on the branch testTurtlebot to indicate that this branch is for the Turtlebot and not the turtlebot3
 
-![](http://erlerobotics.com/docs/img/blockly/spider_b.png)
-
-![](http://erlerobotics.com/docs/img/blockly/rover_b.png)
-
-![](http://erlerobotics.com/docs/img/blockly/brain_b.png)
-
-Readme last updated 29/3/2016
+Readme last updated 08/31/2017
