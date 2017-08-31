@@ -90,3 +90,18 @@ Blockly.Blocks['turn_right'] = {
     this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
   }
 };
+
+Blockly.Blocks['turn_degrees'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Turn ")
+        .appendField(new Blockly.FieldDropdown([["Left", "left"], ["Right", "right"]]), "direction")
+        .appendField(new Blockly.FieldTextInput("1"), "TURN_DEGREES")
+        .appendField("degrees");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    this.setColour(180);
+    this.setTooltip('');
+    this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
+  }
+};
