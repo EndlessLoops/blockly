@@ -81,3 +81,11 @@ Blockly.Python['turn_degrees'] = function(block) {
     return code;
 
 };
+
+Blockly.Python['stop'] = function(block) {
+    
+    var code = "";
+    code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/stop.py");
+    return code;
+
+};

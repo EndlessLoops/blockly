@@ -105,3 +105,15 @@ Blockly.Blocks['turn_degrees'] = {
     this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
   }
 };
+
+Blockly.Blocks['stop'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Stop ")
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);    
+    this.setColour(65);
+    this.setTooltip('');
+    this.setHelpUrl('http://erlerobotics.com/docs/Robot_Operating_System/ROS/Blockly/Intro.html');
+  }
+};
