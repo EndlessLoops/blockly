@@ -4,12 +4,7 @@ from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Imu
 import math
 
-#diameter = 0.2 # meters
-#radius = diameter/2;
-#isFirst = True
-#rotateRadians = rotateAngle * 0.0174533 # value to convert degrees to radians
-
-msg_imu = rospy.wait_for_message('/imu', Imu, timeout=3)
+msg_imu = rospy.wait_for_message('/mobile_base/sensors/imu_data', Imu, timeout=3)
 
 quaternion = (
 msg_imu.orientation.w,
