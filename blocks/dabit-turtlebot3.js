@@ -44,6 +44,8 @@ Blockly.Blocks['move_forward'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Move_Forward ")
+        .appendField(new Blockly.FieldTextInput("1"), "MOVE_SECS")
+        .appendField("second(s) ")
         .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
         .appendField("Speed");
     this.setPreviousStatement(true);
@@ -58,6 +60,8 @@ Blockly.Blocks['move_backward'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Move_Backward ")
+        .appendField(new Blockly.FieldTextInput("1"), "MOVE_SECS")
+        .appendField("second(s) ")
         .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
         .appendField("Speed");
     this.setPreviousStatement(true);
@@ -72,6 +76,8 @@ Blockly.Blocks['turn_left'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Turn_Left ")
+        .appendField(new Blockly.FieldTextInput("1"), "TURN_SECS")
+        .appendField("second(s) ")
         .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
         .appendField("Speed");
     this.setPreviousStatement(true);
@@ -86,6 +92,8 @@ Blockly.Blocks['turn_right'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Turn_Right ")
+        .appendField(new Blockly.FieldTextInput("1"), "TURN_SECS")
+        .appendField("second(s) ")
         .appendField(new Blockly.FieldDropdown([["SLOW", "SLOW"], ["NORMAL", "NORMAL"], ["FAST", "FAST"]]), "speed")
         .appendField("Speed");
     this.setPreviousStatement(true);
@@ -102,7 +110,7 @@ Blockly.Blocks['turn_degrees'] = {
         .appendField("Turn ")
         .appendField(new Blockly.FieldDropdown([["Left", "left"], ["Right", "right"]]), "direction")
         .appendField(new Blockly.FieldTextInput("1"), "TURN_DEGREES")
-        .appendField("degrees");
+        .appendField("degree(s)");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setColour(180);

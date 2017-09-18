@@ -31,10 +31,12 @@ Blockly.Python['circle_mode'] = function(block) {
 };
 
 Blockly.Python['move_forward'] = function(block) {
-
+  
+  var seconds = block.getFieldValue('MOVE_SECS');
   var dropdown_speed = block.getFieldValue('speed');
 
   var code = "";
+  code += "seconds = \"" + seconds.toString() + "\"\n";
   code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
   code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/move_forward.py");
   return code;
@@ -43,9 +45,11 @@ Blockly.Python['move_forward'] = function(block) {
 
 Blockly.Python['move_backward'] = function(block) {
 
+  var seconds = block.getFieldValue('MOVE_SECS');
   var dropdown_speed = block.getFieldValue('speed');
 
   var code = "";
+  code += "seconds = \"" + seconds.toString() + "\"\n";
   code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
   code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/move_backward.py");
   return code;
@@ -54,9 +58,11 @@ Blockly.Python['move_backward'] = function(block) {
 
 Blockly.Python['turn_left'] = function(block) {
 
+  var seconds = block.getFieldValue('TURN_SECS');
   var dropdown_speed = block.getFieldValue('speed');
 
   var code = "";
+  code += "seconds = \"" + seconds.toString() + "\"\n";
   code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
   code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/turn_left.py");
   return code;
@@ -65,9 +71,11 @@ Blockly.Python['turn_left'] = function(block) {
 
 Blockly.Python['turn_right'] = function(block) {
 
+  var seconds = block.getFieldValue('TURN_SECS');
   var dropdown_speed = block.getFieldValue('speed');
 
   var code = "";
+  code += "seconds = \"" + seconds.toString() + "\"\n";
   code += "dropdown_speed = \"" + dropdown_speed.toString() + "\"\n";
   code += Blockly.readPythonFile("../blockly/generators/python/scripts/turtlebot3/turn_right.py");
   return code;
